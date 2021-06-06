@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="vi" class="no-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/loban.css" />
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <title>Thước lỗ ban</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container" style="margin-left: 10px;margin-right: 10px;">
+            <div class="content">
+                <div id="lobanOuter" style="height:400px;">
+                    <div id="abc"></div>
+                    <div class="loban-touch-left"></div>
+                    <div class="loban-touch-right"></div>
+                    <div id="sodoLoban"></div>
+                    <div id="container-sodo"><input type="text" value="0" name="sodo" id="sodo" /> mm (nhập số)</div>
+                    <div id="thanhdo"></div>
+                    <p class="loban-note" style="font-weight: bold;margin-top: 10px;margin-right: 10px;">Hãy kéo thước</p>
+                    <p class="loban-t loban-522" style="margin-top: 10px;"><strong>Thước Lỗ Ban 52.2cm:</strong> Khoảng thông thủy (cửa, cửa sổ...)</p>
+                    <p class="loban-t loban-429" style="margin-top: 10px;"><strong>Thước Lỗ Ban 42.9cm (Dương trạch):</strong> Khối xây dựng (bếp, bệ, bậc...)</p>
+                    <p class="loban-t loban-388"><strong>Thước Lỗ Ban 38.8cm (Âm phần):</strong> Đồ nội thất (bàn thờ, tủ...)</p>
+                    <div id="loban-wrapper">
+                        <div id="loban-scroller">
+                            <div id="pullRight" style="display:none;">
+                                    <span class="pullRightIcon"></span><span class="pullRightLabel">Kéo qua phải...</span>
+                            </div>
+                            <ul id="loban-thelist" >
+                                <li>
+                                    <img src="thuoc522.php" nopin="nopin" /> 
+                                    <img src="thuoc429.php" nopin="nopin" />
+                                    <img src="thuoc388.php" nopin="nopin" />
+                                </li>
+                                <li>
+                                    <img src="images/522-1.png" nopin="nopin"/>
+                                    <img src="images/429-1.png" nopin="nopin"/>
+                                    <img src="images/388-1.png" nopin="nopin"/>
+                                </li>
+                                <li>
+                                    <img src="images/522-2.png" nopin="nopin"/>
+                                    <img src="images/429-2.png" nopin="nopin"/>
+                                    <img src="images/388-2.png" nopin="nopin"/>
+                                </li>
+                                <li>
+                                    <img src="images/522-3.png" nopin="nopin"/>
+                                    <img src="images/429-3.png" nopin="nopin"/>
+                                    <img src="images/388-3.png" nopin="nopin"/>
+                                </li>
+                                <li>
+                                    <img src="images/522-4.png" nopin="nopin"/>
+                                    <img src="images/429-4.png" nopin="nopin"/>
+                                    <img src="images/388-4.png" nopin="nopin"/>
+                                </li>
+                            </ul>
+                            <div id="pullLeft" style="display:none;">
+                            <span class="pullLeftIcon"></span><span class="pullLeftLabel">Kéo qua trái...</span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="clear"></div>
+                </div>
+            <div style="text-align: right; padding-top: 5px;margin-right: 10px; font-size: 20px;" >Đơn vị tính: mm</div>
+            </div>
+        </div>
+        <div class="box_huongdan">
+            <div class="tdbox_hd">
+                <span>Thước Lỗ Ban 52.2cm: Khoảng không thông thủy (cửa, cửa sổ...)</span>
+            </div>
+            <div class="noidung_boxhd">
+                <span id="nd522-text"></span>
+            </div>
+            <div class="tdbox_hd">
+                <span>Thước Lỗ Ban 42.9cm (Dương trạch): Khối xây dựng (bếp, bệ, bậc...)</span>
+            </div>
+            <div class="noidung_boxhd">
+                <span id="nd429-text"></span>
+            </div>
+            <div class="tdbox_hd">
+                <span>Thước Lỗ Ban 38.8cm (Âm phần): Đồ nội thất (bàn thờ, tủ...)</span>
+            </div>
+            <div class="noidung_boxhd">
+                <span id="nd388-text"></span>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
