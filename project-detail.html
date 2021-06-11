@@ -134,7 +134,7 @@
                     <div class="wt-bnr-inr-entry">
                     	<div class="banner-title-outer">
                         	<div class="banner-title-name">
-                        		<h2 style="font-size: 25px; font-weight: 300;font-family: 'Times New Roman', Times, serif;color: white;text-transform: uppercase;">NHỮNG BÀI VIẾT VỀ PHONG THUỶ</h2>
+                        		<h2 style="font-size: 25px; font-weight: 300;font-family: 'Times New Roman', Times, serif;color: white;text-transform: uppercase;">XEM PHONG THUỶ</h2>
                             </div>
                         </div>
                         <!-- BREADCRUMB ROW -->                            
@@ -162,16 +162,40 @@
                     <div class="section-content">
                         <!-- TITLE START -->
                         <div class="text-left">
-                            <h2 class="text-uppercase font-36">Related projects</h2>
+                            <h2 class="text-uppercase font-36">Xem thông tin phong thuỷ</h2>
                             <div class="wt-separator-outer">
                                 <div class="wt-separator bg-black"></div>
                             </div>
                         </div>
                         <!-- TITLE END -->
                         <!-- CAROUSEL -->
-                        <div class="section-content">
-                               
-                            </div>
+                        <div>
+                        <div class="section-content" style="padding-top: 1%;"></div>
+                            <input value="" id="input-text" name="p" type="yearborn" placeholder="Nhập năm sinh" style="text-align: center;font-size: 15px;width: 10%; height: 30px;font-family: 'Times New Roman', Times, serif;"/>
+                            <select value="" id="seletion-sex" placeholder="Giới tính" type="sex" style="font-size: 15px;width: 15%; height: 30px;font-family: 'Times New Roman', Times, serif;" >
+                                <option  value="-1" selected="selected">--Chọn giới tính--</option>
+                                <option value="0" class="sex-selected">Nam</option>
+                                <option value="1" class="sex-selected">Nữ</option>
+                            </select>
+                        </div>
+                        <div class="chon-huong" style="padding-top: 1%;">
+                            <select name="" id="huongdat" style=" font-size: 15px;width: 15%; height: 30px;font-family: 'Times New Roman', Times, serif;">
+                                <option value="-1" selected="selected">---- Hướng nhà ----</option>
+                                <option value="0" class="huong-nha">Nam</option>
+                                <option value="1" class="huong-nha">Tây Nam</option>
+                                <option value="2" class="huong-nha">Tây</option>
+                                <option value="3" class="huong-nha">Tây Bắc</option>
+                                <option value="4" class="huong-nha">Bắc</option>
+                                <option value="5" class="huong-nha">Đông Bắc</option>
+                                <option value="6" class="huong-nha">Đông</option>
+                                <option value="7" class="huong-nha">Đông Nam</option>
+                            </select>
+                        </div>
+                        <div class="button-ok" style="padding-top: 1%;">
+                            <button onclick="ketqua" class="xem-phong-thuy" id="getPT" type="button" style="font-weight: 300;height: 30px;width: 50px;">OK</button>
+                        </div>
+                        <div class="pt-3" id="result"></div>
+                    </div>
                     </div>
                     
                     
@@ -249,6 +273,21 @@
 
 <script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script  src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
+
+<script type="button">
+    
+    var input = document.getElementById("input-text");
+    var sex = document.getElementById("seletion-sex");
+    var huong = document.getElementById("huongnha");
+
+    var Button = document.getElementById("getPT");
+    var result = document.getElementById("result");
+
+    button.onclick = function(){
+        
+    }
+    
+</script>
 
 </body>
 
