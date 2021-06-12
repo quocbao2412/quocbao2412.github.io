@@ -25,52 +25,6 @@ function ketqua() {
     }
     
  
-    // switch(z.options[z.selectedIndex].text){
-    //     case "Nam":
-                
-    //            { img.src="images/phongthuy/nam.jpg";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-    //     case "Tây Nam":
-    //         { img.src="images/phongthuy/taynam.jpg";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-    //     case "Tây":
-    //         { img.src="images/phongthuy/tay.png";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-    //     case "Tây Bắc":
-    //         { img.src="images/phongthuy/taybac.png";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-    //     case "Bắc":
-    //         { img.src="images/phongthuy/bac.png";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-    //     case "Đông Bắc":
-    //         { img.src="images/phongthuy/dongbac.png";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-    //     case "Đông":
-    //         { img.src="images/phongthuy/dong.png";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-    //     case "Đông Nam":
-    //         { img.src="images/phongthuy/dongnam.png";
-    //             var src = document.getElementById("imgPT");
-    //             src.appendChild(img);
-    //             break;}
-            
-    // }
-    
-
 
                                     
     if(document.getElementById("myText").value=="1901"&&y.options[y.selectedIndex].text=="Nam"){
