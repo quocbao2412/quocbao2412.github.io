@@ -161,6 +161,7 @@
                     
                     <div class="section-content">
                         <!-- TITLE START -->
+                        
                         <div class="text-left">
                             <h2 class="text-uppercase font-36">Xem thông tin phong thuỷ</h2>
                             <div class="wt-separator-outer">
@@ -171,15 +172,15 @@
                         <!-- CAROUSEL -->
                         <div>
                         <div class="section-content" style="padding-top: 1%;"></div>
-                            <input value="" id="input-text" name="p" type="yearborn" placeholder="Nhập năm sinh" style="text-align: center;font-size: 15px;width: 10%; height: 30px;font-family: 'Times New Roman', Times, serif;"/>
-                            <select value="" id="seletion-sex" placeholder="Giới tính" type="sex" style="font-size: 15px;width: 15%; height: 30px;font-family: 'Times New Roman', Times, serif;" >
+                            <input value="" id="myText" name="p" type="text" placeholder="Nhập năm sinh" style="text-align: center;font-size: 15px;width: 10%; height: 30px;font-family: 'Times New Roman', Times, serif;"/>
+                            <select value="" id="selection" placeholder="Giới tính" type="selected" style="font-size: 15px;width: 15%; height: 30px;font-family: 'Times New Roman', Times, serif;" >
                                 <option  value="-1" selected="selected">--Chọn giới tính--</option>
                                 <option value="0" class="sex-selected">Nam</option>
                                 <option value="1" class="sex-selected">Nữ</option>
                             </select>
                         </div>
-                        <div class="chon-huong" style="padding-top: 1%;">
-                            <select name="" id="huongdat" style=" font-size: 15px;width: 15%; height: 30px;font-family: 'Times New Roman', Times, serif;">
+                        <div class="chon-huong" style="padding-top: 1%;padding-bottom: 1%;">
+                            <select name="" id="huongdat" type="selected" style=" font-size: 15px;width: 15%; height: 30px;font-family: 'Times New Roman', Times, serif;">
                                 <option value="-1" selected="selected">---- Hướng nhà ----</option>
                                 <option value="0" class="huong-nha">Nam</option>
                                 <option value="1" class="huong-nha">Tây Nam</option>
@@ -191,11 +192,17 @@
                                 <option value="7" class="huong-nha">Đông Nam</option>
                             </select>
                         </div>
-                        <div class="button-ok" style="padding-top: 1%;">
-                            <button onclick="ketqua" class="xem-phong-thuy" id="getPT" type="button" style="font-weight:bold;height: 30px;width: 50px;">OK</button>
-                        </div>
-                        <div class="pt-3" id="result"></div>
+
+                            <button onclick="ketqua()" class="xem-phong-thuy" id="getPT" type="button" style="font-weight:bold;height: 30px;width: 50px;">OK</button>
+                            
+                            <div style="padding-left: 2%;">
+                                <div><img id="imgPT" src="" style="background-position: center;"></div>
+                                <p id="noidung" style="font-size: 18px; text-align: justify; font-family: 'Times New Roman', Times, serif;"></p>
+                            </div>
+                            
+                        
                     </div>
+                    
                     <div class="wt-separator bg-black" style="width: 60%;"></div>
                     <div class="nguhanh" style="text-align: justify;">
                         <h4 style="font-size: 25px;">Màu sắc & Ngũ hành</h4>
@@ -301,9 +308,7 @@
 
 <script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script  src="js/shortcode.js"></script><!-- SHORTCODE FUCTIONS  -->
-
-
-
+<script src="js/onclick.js"></script>
 </body>
 
 </html>
